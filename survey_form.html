@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <style>
+        body {
+            text-align: center;
+            background: blue;
+        }
+        form{
+            max-width: 500px;
+            margin: 50px auto;
+            padding:  30px 20px;
+            background: white;
+        }
+        .form-control{
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea{
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .form-control input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+        }
+        button{
+            display: block;
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }  
+    </style>
+</head>
+<body>
+    <form action="/action" class="form">
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age" placeholder="Enter your age">
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="phone">Phone</label>
+            <input type="phone" name="phone" id="phone" placeholder=" Enter your phone number">
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="radio">
+                Which option best describes your role ?
+            </label>
+            <select name="radio" id="radio">
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+                <option value="admin">Admin</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="checkbox">
+                Who recommended you to join HVA ?
+            </label>
+            <br>
+            <input type="checkbox" name="checkbox" >Friend</input>
+            <input type="checkbox" name="checkbox">Parents</input>
+            <input type="checkbox" name="checkbox">College</input>
+            <input type="checkbox" name="checkbox">Other</input>
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="checkbox">
+                Which language are you learning ?
+            </label>
+            <input type="checkbox" name="checkbox">HTML</input>
+            <input type="checkbox" name="checkbox">CSS</input>
+            <input type="checkbox" name="checkbox">JavaScript</input>
+            <input type="checkbox" name="checkbox">PHP</input>
+            <input type="checkbox" name="checkbox">Java</input>
+            <input type="checkbox" name="checkbox">Python</input>
+            <input type="checkbox" name="checkbox">C++</input>
+        </div>
+        <br>
+        <div class="form-control">
+            <label for="comment">
+                What do you think about HVA?
+            </label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment"></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit" value="Submit">SUBMIT</button>
+        </div>
+
+    </form>
+</body>
+</html>
